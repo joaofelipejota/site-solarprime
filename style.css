@@ -1,0 +1,856 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9f8;
+    color: #17221b;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    border-bottom: 1px solid #e8ece9;
+
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #102017;
+
+    font-size: 27px;
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.logo span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 10px;
+
+    background: #16843a;
+
+    color: white;
+
+    font-size: 21px;
+
+    box-shadow:
+        0 6px 15px rgba(22, 132, 58, 0.2);
+}
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    position: relative;
+
+    text-decoration: none;
+
+    color: #26332b;
+
+    font-weight: 600;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background: #16843a;
+
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #16843a;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+}
+
+nav a:hover {
+    color: #16843a;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+    padding: 110px 8%;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+#inicio {
+    min-height: 88vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background:
+        radial-gradient(circle at 80% 30%, rgba(38, 180, 91, 0.12), transparent 35%),
+        linear-gradient(135deg, #f3faf5, #ffffff);
+}
+
+.hero-conteudo {
+    width: 55%;
+    max-width: 650px;
+}
+
+.etiqueta {
+    color: #16843a;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+ #inicio h2 {
+    font-size: 64px;
+    line-height: 1.05;
+    letter-spacing: -2.5px;
+    margin-bottom: 28px;
+    color: #102017;
+}
+
+#inicio h2 span {
+    color: #16843a;
+}
+}
+
+.descricao {
+    font-size: 19px;
+    color: #5b665f;
+    max-width: 580px;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+button {
+    width: fit-content;
+
+    padding: 16px 32px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #16843a,
+        #20a34b
+    );
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(22, 132, 58, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        filter 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+
+    filter: brightness(1.05);
+
+    box-shadow:
+        0 16px 32px rgba(22, 132, 58, 0.32);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #116c2f;
+    box-shadow: 0 15px 30px rgba(22, 132, 58, 0.3);
+}
+
+
+/* =========================
+   IMAGEM HERO
+========================= */
+
+.hero-imagem {
+    width: 45%;
+    position: relative;
+}
+}
+
+.hero-imagem img {
+    display: block;
+
+    width: 100%;
+    height: 470px;
+
+    object-fit: cover;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.18);
+
+    transition: transform 0.5s ease;
+
+    filter: saturate(1.08) contrast(1.03);
+}.hero-imagem::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    background: rgba(37, 211, 102, 0.12);
+
+    border-radius: 50%;
+
+    top: -40px;
+    right: -40px;
+
+    filter: blur(10px);
+
+    z-index: 0;
+}
+
+.hero-imagem img {
+    position: relative;
+    z-index: 1;
+}
+}
+
+.hero-imagem img:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+#servicos {
+    background: white;
+}
+
+#servicos > h2 {
+    font-size: 44px;
+    letter-spacing: -1px;
+    margin-bottom: 45px;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card-servico {
+    position: relative;
+
+    background: #ffffff;
+
+    padding: 40px;
+
+    min-height: 230px;
+
+    border-radius: 20px;
+
+    border: 1px solid #e6ebe7;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+
+    overflow: hidden;
+
+    transition: all 0.35s ease;
+}
+}
+
+.card-servico:hover {
+    transform: translateY(-10px);
+
+    border-color: #b9dbc3;
+
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.10);
+}.card-servico::after {
+    content: "";
+
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    background: rgba(22, 132, 58, 0.06);
+
+    border-radius: 50%;
+
+    right: -35px;
+    bottom: -35px;
+
+    transition: 0.4s ease;
+}
+
+.card-servico:hover::after {
+    transform: scale(1.5);
+}
+}
+
+.card-servico h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #16843a;
+}
+
+.card-servico p {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    color: #667169;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   DEPOIMENTOS
+========================= */
+
+#depoimentos {
+    background: #f3f6f4;
+}
+
+#depoimentos h2 {
+    font-size: 44px;
+    letter-spacing: -1px;
+    margin-bottom: 45px;
+}
+
+.depoimentos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card-depoimento {
+    position: relative;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    border: 1px solid #e5ebe7;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+
+    transition: all 0.35s ease;
+
+    overflow: hidden;
+}
+}
+
+.card-depoimento:hover {
+    transform: translateY(-8px);
+
+    border-color: #cfe4d5;
+
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.09);
+}.card-depoimento::before {
+    content: "“";
+
+    position: absolute;
+
+    top: -20px;
+    right: 20px;
+
+    font-size: 120px;
+
+    font-family: Georgia, serif;
+
+    color: #eef6f0;
+
+    line-height: 1;
+}
+}
+
+.estrelas {
+    color: #f5b301;
+
+    font-size: 21px;
+
+    margin-bottom: 18px;
+}
+
+.card-depoimento p {
+    font-size: 17px;
+
+    color: #4f5b53;
+
+    margin-bottom: 25px;
+}
+
+.card-depoimento h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.card-depoimento span {
+    color: #7a847d;
+    font-size: 14px;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+#sobre {
+    background: white;
+}
+
+#sobre h2,
+#contato h2 {
+    font-size: 42px;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+}
+
+#sobre p {
+    max-width: 700px;
+
+    font-size: 18px;
+
+    color: #606b64;
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+#contato {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(55, 180, 91, 0.20),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #0b1d12,
+            #12351f
+        );
+
+    color: white;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+#contato::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: rgba(44, 190, 91, 0.08);
+
+    top: -180px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    filter: blur(20px);
+}
+
+#contato > * {
+    position: relative;
+    z-index: 1;
+}
+}
+
+#contato h2 {
+    color: white;
+}
+
+#contato p {
+    color: #c7d4cb;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background: #09120c;
+
+    color: #9ca9a0;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   WHATSAPP FLUTUANTE
+========================= */
+
+.whatsapp-flutuante {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 64px;
+    height: 64px;
+
+    background: #25D366;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+
+    transition: transform 0.3s ease;
+
+    animation: pulsarWhatsApp 2s infinite;
+}
+
+.whatsapp-flutuante svg {
+    width: 34px;
+    height: 34px;
+}
+
+.whatsapp-flutuante:hover {
+    transform: scale(1.12);
+    animation: none;
+}
+
+@keyframes pulsarWhatsApp {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+/* =========================
+   NÚMEROS DE IMPACTO
+========================= */
+
+#numeros {
+    padding: 65px 8%;
+
+    background: #102017;
+
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+
+    text-align: center;
+}
+
+.numero {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 10px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.numero:last-child {
+    border-right: none;
+}
+
+.numero strong {
+    font-size: 42px;
+
+    color: #63d68a;
+
+    line-height: 1;
+
+    margin-bottom: 10px;
+}
+
+.numero span {
+    color: #c4d0c8;
+
+    font-size: 14px;
+
+    letter-spacing: 0.5px;
+}/* =========================
+   SOBRE
+========================= */
+
+#sobre {
+    background: #ffffff;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.sobre-conteudo h2 {
+    font-size: 46px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 25px;
+
+    color: #102017;
+}
+
+.sobre-conteudo p:not(.etiqueta) {
+    color: #667169;
+
+    font-size: 17px;
+
+    max-width: 650px;
+
+    margin-bottom: 18px;
+}
+
+
+.sobre-beneficios {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.beneficio {
+    padding: 25px;
+
+    background: #f7faf8;
+
+    border: 1px solid #e4ebe6;
+
+    border-radius: 16px;
+
+    transition: all 0.3s ease;
+}
+
+
+.beneficio:hover {
+    transform: translateX(8px);
+
+    background: #ffffff;
+
+    border-color: #c9dfd0;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+.beneficio strong {
+    display: block;
+
+    color: #16843a;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.beneficio h3 {
+    font-size: 21px;
+
+    margin-bottom: 5px;
+}
+
+
+.beneficio p {
+    color: #69756d;
+
+    font-size: 15px;
+}
+@media (max-width: 768px) {#sobre {
+    grid-template-columns: 1fr;
+    gap: 45px;
+}
+
+.sobre-conteudo h2 {
+    font-size: 38px;
+}
+#numeros {
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 50px 6%;
+}
+
+.numero {
+    border-right: none;
+}
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #inicio {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding-top: 80px;
+    }
+
+    .hero-conteudo {
+        width: 100%;
+    }
+
+    .hero-imagem {
+        width: 100%;
+    }
+
+    .hero-imagem img {
+        height: 350px;
+    }
+
+    #inicio h2 {
+        font-size: 42px;
+    }
+
+    section {
+        padding: 80px 6%;
+    }
+
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .depoimentos-container {
+        grid-template-columns: 1fr;
+    }
+
+}
