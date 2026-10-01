@@ -918,3 +918,77 @@ a:focus-visible {
         transition-duration: .01ms !important;
     }
 }
+/* =========================================================
+   CORREÇÃO DOS BOTÕES E LINKS
+========================================================= */
+
+.botao-principal,
+.botao-secundario,
+.botao-branco {
+    text-decoration: none !important;
+}
+
+.botao-principal {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 25px !important;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #159447, #0d7435) !important;
+    color: white !important;
+    font-weight: 700;
+    box-shadow: 0 12px 28px rgba(21, 148, 71, .25);
+}
+
+.botao-principal:hover {
+    color: white !important;
+    transform: translateY(-3px);
+}
+
+.botao-secundario {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 25px !important;
+    border: 1px solid #cbdacf !important;
+    border-radius: 12px;
+    background: white !important;
+    color: #245635 !important;
+    font-weight: 700;
+}
+
+.botao-secundario:hover {
+    color: #159447 !important;
+}
+
+.botao-branco {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px !important;
+    border-radius: 12px;
+    background: white !important;
+    color: #126c35 !important;
+    font-weight: 800;
+}
+
+.card-servico a {
+    display: inline-block !important;
+    margin-top: 18px;
+    color: #159447 !important;
+    text-decoration: none !important;
+    font-weight: 700;
+}
+
+.card-servico a:hover {
+    color: #0d7435 !important;
+    text-decoration: none !important;
+}
+
+nav a {
+    text-decoration: none !important;
+}
+
+nav a:hover {
+    text-decoration: none !important;
+}
